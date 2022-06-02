@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Proyecto_Final.Agenda">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAIAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Agenda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Final.Historial_Pacientes">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAYAAgAAAAABABAACAABAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Historial Pacientes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Final.Medicamentos">
+    <Position X="7" Y="4" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAABgAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Medicamentos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Final.Sintomas">
+    <Position X="7" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sintomas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto_Final.Pacientes">
+    <Position X="7" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAEACAAgAAAAAAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Pacientes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
