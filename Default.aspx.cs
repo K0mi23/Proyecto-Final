@@ -32,7 +32,7 @@ namespace Proyecto_Final
             pacienteNuevo.Telefono=Telefono_Textbox.Text;
 
             pacientesLista.Add(pacienteNuevo);Guardar(); 
-            InformacionPaciente.DataSource = pacientesLista; InformacionPaciente.DataBind();
+            InformacionPaciente.DataSource = pacientesLista; InformacionPaciente.DataBind(); 
         }
     }
 }
