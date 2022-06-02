@@ -50,9 +50,9 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
+                        <li><a runat="server" href="~/">Mantenimiento de Pacientes</a></li>
+                        <li><a runat="server" href="~/About">Agendar Citas</a></li>
+                        <li><a runat="server" href="~/Contact">Mantenimiento Medicamentos</a></li>
                     </ul>
                 </div>
             </div>
@@ -62,7 +62,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Mesoamericana</p>
             </footer>
         </div>
 

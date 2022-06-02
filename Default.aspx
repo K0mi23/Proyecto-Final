@@ -3,40 +3,45 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <h1>BIENVENIDO</h1>
+        <p>Agregar Paciente Nuevo</p>
+        <p>NIT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="NIT_Textbox" runat="server" Width="244px"></asp:TextBox>
+        </p>
+        <p>Nombre:
+            <asp:TextBox ID="Nombre_Textbox" runat="server" Width="249px"></asp:TextBox>
+        </p>
+        <p>Apellido:
+            <asp:TextBox ID="Apellido_Textbox" runat="server" Width="252px"></asp:TextBox>
+        </p>
+        <p>Dirección: 
+            <asp:TextBox ID="Direccion_Textbox" runat="server" Width="234px"></asp:TextBox>
+        </p>
+        <p>Fecha de Nacimiento
+            <asp:Calendar ID="FNacimiento_Calendar" runat="server" Height="28px" Width="315px"></asp:Calendar>
+        </p>
+        <p>Teléfono: <asp:TextBox ID="Telefono_Textbox" runat="server" Width="238px"></asp:TextBox>
+        </p>
+        <p>
+            <asp:Button ID="BotonGuardar" runat="server" Height="49px" Text="Guardar" Width="126px" class="btn btn-primary btn-lg" OnClick="BotonGuardar_Click" />
+        </p>
+        <p>
+            <asp:GridView ID="InformacionPaciente" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Width="531px">
+                <FooterStyle BackColor="White" ForeColor="#333333" />
+                <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="White" ForeColor="#333333" />
+                <SelectedRowStyle BackColor="#339966" Font-Bold="True" ForeColor="White" />
+                <SortedAscendingCellStyle BackColor="#F7F7F7" />
+                <SortedAscendingHeaderStyle BackColor="#487575" />
+                <SortedDescendingCellStyle BackColor="#E5E5E5" />
+                <SortedDescendingHeaderStyle BackColor="#275353" />
+            </asp:GridView>
+        </p>
+        
     </div>
 
     <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
     </div>
 
 </asp:Content>
