@@ -24,7 +24,9 @@ namespace Proyecto_Final
         protected void AgendarCita_Click(object sender, EventArgs e)
         {
             Agenda Cita = new Agenda();
-            Cita.NIT = NitPaciente.Text;
+            Cita.NIT = NitPaciente.Text; 
+            Cita.Nombre=Nombrepaciente.Text;
+            Cita.Apellido = ApellidoPaciente.Text;
             Cita.Cita = FechaCita.SelectedDate;
             Cita.HoraInicio = HoraInicial.Text;
             Cita.HoraFin = HoraFinal.Text;

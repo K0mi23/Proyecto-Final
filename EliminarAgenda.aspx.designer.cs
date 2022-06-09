@@ -11,26 +11,35 @@ namespace Proyecto_Final
 {
 
 
-    public partial class About
+    public partial class EliminarAgenda
     {
 
         /// <summary>
-        /// NitPaciente control.
+        /// Nitpaciente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NitPaciente;
+        protected global::System.Web.UI.WebControls.TextBox Nitpaciente;
 
         /// <summary>
-        /// Nombrepaciente control.
+        /// BuscarCita control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Nombrepaciente;
+        protected global::System.Web.UI.WebControls.Button BuscarCita;
+
+        /// <summary>
+        /// NombrePaciente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox NombrePaciente;
 
         /// <summary>
         /// ApellidoPaciente control.
@@ -42,48 +51,21 @@ namespace Proyecto_Final
         protected global::System.Web.UI.WebControls.TextBox ApellidoPaciente;
 
         /// <summary>
-        /// FechaCita control.
+        /// CitaPaciente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar FechaCita;
+        protected global::System.Web.UI.WebControls.TextBox CitaPaciente;
 
         /// <summary>
-        /// HoraInicial control.
+        /// EliminarCita control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox HoraInicial;
-
-        /// <summary>
-        /// HoraFinal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox HoraFinal;
-
-        /// <summary>
-        /// AgendarCita control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AgendarCita;
-
-        /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Button EliminarCita;
     }
 }

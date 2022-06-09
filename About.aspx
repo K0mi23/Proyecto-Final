@@ -6,6 +6,12 @@
     <p>Nit Paciente:
         <asp:TextBox ID="NitPaciente" runat="server"></asp:TextBox>
     </p>
+    <p>Nombre:&nbsp;
+        <asp:TextBox ID="Nombrepaciente" runat="server"></asp:TextBox>
+    </p>
+    <p>Apellido:
+        <asp:TextBox ID="ApellidoPaciente" runat="server"></asp:TextBox>
+    </p>
     <p>Fecha<asp:Calendar ID="FechaCita" runat="server"></asp:Calendar>
     </p>
     <p>Hora de Inicio:
