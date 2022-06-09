@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,6 +15,12 @@ namespace Proyecto_Final
         {
 
         }
+        private void Guardar()
+        {
+            string json = JsonConvert.SerializeObject(AgendaCitas);
+            string archivo = Server.MapPath("Agenda.json");
+            System.IO.File.WriteAllText(archivo, json);
+        }
         protected void AgendarCita_Click(object sender, EventArgs e)
         {
             Agenda Cita = new Agenda();
@@ -21,7 +28,9 @@ namespace Proyecto_Final
             Cita.Cita = FechaCita.SelectedDate;
             Cita.HoraInicio = HoraInicial.Text;
             Cita.HoraFin = HoraFinal.Text;
-            AgendaCitas.Add(Cita); 
+            AgendaCitas.Add(Cita);
+            Guardar(); GridView1.DataSource = AgendaCitas; GridView1.DataBind();
+
         }
     }
 }
