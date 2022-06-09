@@ -10,5 +10,6 @@ namespace Proyecto_Final
         public DateTime Cita { get; set; }
         public string HoraInicio { get; set; }
         public string HoraFin { get; set; }
+        List<Pacientes> AgendaLista { get; set; }
     }
 }

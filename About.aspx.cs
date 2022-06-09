@@ -31,6 +31,7 @@ namespace Proyecto_Final
             Cita.HoraInicio = HoraInicial.Text;
             Cita.HoraFin = HoraFinal.Text;
             AgendaCitas.Add(Cita);
+            
             Guardar(); GridView1.DataSource = AgendaCitas; GridView1.DataBind();
 
         }
