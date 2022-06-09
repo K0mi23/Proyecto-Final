@@ -21,7 +21,7 @@ namespace Proyecto_Final
             Cita.Cita = FechaCita.SelectedDate;
             Cita.HoraInicio = HoraInicial.Text;
             Cita.HoraFin = HoraFinal.Text;
-            AgendaCitas.Add(Cita);
+            AgendaCitas.Add(Cita); 
         }
     }
 }
