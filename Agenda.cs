@@ -8,7 +8,7 @@ namespace Proyecto_Final
     public class Agenda:Pacientes
     {
         public DateTime Cita { get; set; }
-        public DateTime HoraInicio { get; set; }
-        public DateTime HoraFin { get; set; }
+        public string HoraInicio { get; set; }
+        public string HoraFin { get; set; }
     }
 }

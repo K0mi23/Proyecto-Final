@@ -23,7 +23,7 @@ namespace Proyecto_Final
         }
         protected void BotonGuardar_Click(object sender, EventArgs e)
         {
-           Pacientes pacienteNuevo = new Pacientes();
+            Pacientes pacienteNuevo = new Pacientes();
             pacienteNuevo.NIT = NIT_Textbox.Text;
             pacienteNuevo.Nombre = Nombre_Textbox.Text;
             pacienteNuevo.Apellido= Apellido_Textbox.Text;
