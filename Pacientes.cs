@@ -10,6 +10,6 @@ namespace Proyecto_Final
         public string Direccion { get; set; }
         public DateTime FechaNacimiento { get; set; }
         public string Telefono { get; set; }
-        public List<Pacientes> PacientesLista { get; set;}
+       
     }
 }

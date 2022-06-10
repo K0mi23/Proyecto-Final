@@ -24,26 +24,7 @@ namespace Proyecto_Final
 
         protected void BuscarCita_Click(object sender, EventArgs e)
         {
-            NITPacientev = Nitpaciente.Text;
-            bool flag = false;
-
-            foreach (var u in AgendaCitas)
-            {
-                Pacientes p = u.PacientesLista.Find(c=>c.NIT == NITPacientev);
-                if (p != null)
-                {
-                    NombrePaciente.Text = p.Nombre;
-                    ApellidoPaciente.Text = p.Apellido;
-                    flag = true;
-                }
-            }
-            if (!flag)
-            {
-                Response.Write("<script>alert('La Cita no fué encontrada!')</script>");
-                Nitpaciente.Text = "";
-                NombrePaciente.Text = "";
-                ApellidoPaciente.Text = "";
-            }
+           
         }
     }
 }

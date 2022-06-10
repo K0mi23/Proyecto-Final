@@ -24,27 +24,7 @@ namespace Proyecto_Final
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            NIT = NITPaciente.Text;
-            bool flag = false;
-
-            foreach (var u in PacienteList)
-            {
-                Persona p = u.PacientesLista.Find(c => c.NIT == NIT);
-                if (p != null)
-                {
-                    NombreNuevo.Text = p.Nombre;
-                    ApellidoNuevo.Text = p.Apellido;
-                    flag = true;
-                }
-            }
-            if (!flag)
-            {
-                Response.Write("<script>alert('El Paciente no fue encontrado')</script>");
-                NIT = "";
-                NITPaciente.Text = "";
-                ApellidoNuevo.Text = "";
-                NombreNuevo.Text = "";
-            }
+           
         }
     }
 }

@@ -23,9 +23,6 @@
         <p>Teléfono: <asp:TextBox ID="Telefono_Textbox" runat="server" Width="238px"></asp:TextBox>
         </p>
         <p>
-            <asp:Button ID="BotonGuardar" runat="server" Height="49px" Text="Guardar" Width="126px" class="btn btn-primary btn-lg" OnClick="BotonGuardar_Click" />
-        </p>
-        <p>
             <asp:GridView ID="InformacionPaciente" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Width="531px">
                 <FooterStyle BackColor="White" ForeColor="#333333" />
                 <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
@@ -37,6 +34,11 @@
                 <SortedDescendingCellStyle BackColor="#E5E5E5" />
                 <SortedDescendingHeaderStyle BackColor="#275353" />
             </asp:GridView>
+        </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="BotonGuardar" runat="server" Height="49px" Text="Guardar" Width="126px" class="btn btn-primary btn-lg" OnClick="BotonGuardar_Click" />
         </p>
         
     </div>

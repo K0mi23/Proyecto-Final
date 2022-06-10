@@ -127,6 +127,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="Login.aspx" />
     <Content Include="WebForm1.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -206,6 +207,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Historial Pacientes.cs" />
+    <Compile Include="Hospital.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Medicamentos.cs" />
     <Compile Include="Pacientes.cs" />
     <Compile Include="Persona.cs" />
