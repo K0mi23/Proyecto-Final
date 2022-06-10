@@ -11,6 +11,6 @@ namespace Proyecto_Final
         public string IngredienteGenerico { get; set; }
         public string Laboratorio { get; set; }
         public List<string> EnfermedadesaRecetar { get; set; }
-
+        public static List<Medicamentos> MeicamentosLista { get; set; }
     }
 }

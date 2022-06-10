@@ -2,20 +2,23 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+
     <div class="jumbotron">
         <h1>BIENVENIDO</h1>
         <p>Agregar Paciente Nuevo</p>
         <p>NIT:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="NIT_Textbox" runat="server" Width="244px"></asp:TextBox>
+            <asp:TextBox ID="NIT_Textbox" runat="server" Width="245px"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Limpiar" />
         </p>
         <p>Nombre:
             <asp:TextBox ID="Nombre_Textbox" runat="server" Width="249px"></asp:TextBox>
         </p>
         <p>Apellido:
-            <asp:TextBox ID="Apellido_Textbox" runat="server" Width="252px"></asp:TextBox>
+            <asp:TextBox ID="Apellido_Textbox" runat="server" Width="248px"></asp:TextBox>
         </p>
         <p>Dirección: 
-            <asp:TextBox ID="Direccion_Textbox" runat="server" Width="234px"></asp:TextBox>
+            <asp:TextBox ID="Direccion_Textbox" runat="server" Width="231px"></asp:TextBox>
         </p>
         <p>Fecha de Nacimiento
             <asp:Calendar ID="FNacimiento_Calendar" runat="server" Height="28px" Width="315px"></asp:Calendar>
@@ -35,8 +38,6 @@
                 <SortedDescendingHeaderStyle BackColor="#275353" />
             </asp:GridView>
         </p>
-        <p>
-            &nbsp;</p>
         <p>
             <asp:Button ID="BotonGuardar" runat="server" Height="49px" Text="Guardar" Width="126px" class="btn btn-primary btn-lg" OnClick="BotonGuardar_Click" />
         </p>

@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %> - Proyecto Final</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -22,6 +22,7 @@
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <%--Framework Scripts--%>
+
                 <asp:ScriptReference Name="MsAjaxBundle" />
                 <asp:ScriptReference Name="jquery" />
                 <asp:ScriptReference Name="bootstrap" />
@@ -36,6 +37,7 @@
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
             </Scripts>
+            
         </asp:ScriptManager>
 
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -46,18 +48,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
+                    <a class="navbar-brand" runat="server" href="~/">Proyecto Final</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Mantenimiento de Pacientes</a></li>
+                        <li><a runat="server" href="~/AztualizarPaciente">Actualizar paciente</a></li>
                         <li><a runat="server" href="~/About">Agendar Citas</a></li>
                         <li><a runat="server" href="~/Contact">Mantenimiento Medicamentos</a></li>
                         <li><a runat="server" href="~/WebForm1">Mantenimiento Sintomas</a></li>
-                        <li><a runat="server" href="~/AztualizarPaciente">Actualizar paciente</a></li>
                     </ul>
                 </div>
-            </div>
+            </div>      
         </div>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
@@ -69,5 +71,8 @@
         </div>
 
     </form>
+    <style>
+            body {background-color: cornflowerblue;} 
+            </style>
 </body>
 </html>

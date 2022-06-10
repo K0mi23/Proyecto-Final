@@ -10,26 +10,38 @@ namespace Proyecto_Final
 {
     public partial class Contact : Page
     {
-        List<Medicamentos> ListaMedicamentos = new List<Medicamentos>();
+        public static List<Medicamentos> ListaMedicamentos = new List<Medicamentos>();
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+        private void Guardar()
+        {
+            string json = JsonConvert.SerializeObject(ListaMedicamentos);
+            string archivo = Server.MapPath("medicamentos.json");
+            System.IO.File.WriteAllText(archivo, json);
+            GridView1.DataSource = ListaMedicamentos;
+            GridView1.DataBind();
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
             Medicamentos medicamento = new Medicamentos();
             medicamento.Codigo = Codigo.Text;
             medicamento.IngredienteGenerico = Ingrediente.Text;
             medicamento.Laboratorio=Laboratorio.Text;
-
             ListaMedicamentos.Add(medicamento);
+            Guardar();
+            Response.Write("<script>alert('Medicamento Ingresado exitosamente!')</script>");
+        }
 
-            string json = JsonConvert.SerializeObject(ListaMedicamentos);
-            string archivo = Server.MapPath("medicamentos.json");
-            System.IO.File.WriteAllText(archivo, json);
-            GridView1.DataSource= ListaMedicamentos; 
-            GridView1.DataBind();
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Medicamentos medicamentoActualizar = Medicamentos.MeicamentosLista.Find(x => x.Codigo == Codigo.Text);
+            medicamentoActualizar.Codigo = Codigo.Text;
+            medicamentoActualizar.IngredienteGenerico= Ingrediente.Text;
+            medicamentoActualizar.Laboratorio = Laboratorio.Text;
         }
     }
 }

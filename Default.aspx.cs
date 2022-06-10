@@ -16,15 +16,23 @@ namespace Proyecto_Final
         {
 
         }
+        private void Limpiar()
+        {
+            NIT_Textbox.Text = "";
+            Nombre_Textbox.Text = "";
+            Apellido_Textbox.Text = "";
+            Direccion_Textbox.Text = "";
+            Telefono_Textbox.Text = "";
+            FNacimiento_Calendar.VisibleDate= DateTime.Now;
+            InformacionPaciente.DataSource = null; InformacionPaciente.DataBind();  
+        }
         private void Guardar()
         {
             string json = JsonConvert.SerializeObject(pacientesLista);
             string archivo = Server.MapPath("pacientes.json");
             System.IO.File.WriteAllText(archivo, json);
-        }
-       
-
-        protected void Button1_Click(object sender, EventArgs e)
+        } 
+        protected void BotonGuardar_Click(object sender, EventArgs e)
         {
             Pacientes pacienteNuevo = new Pacientes();
             pacienteNuevo.NIT = NIT_Textbox.Text;
@@ -36,6 +44,12 @@ namespace Proyecto_Final
             pacientesLista.Add(pacienteNuevo);
             Guardar();
             InformacionPaciente.DataSource = pacientesLista; InformacionPaciente.DataBind();
+            Response.Write("<script>alert('Paciente Ingresado exitosamente!')</script>");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Limpiar();
         }
     }
 }

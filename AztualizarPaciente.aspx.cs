@@ -21,10 +21,34 @@ namespace Proyecto_Final
             json.Close();
             PacienteList = JsonConvert.DeserializeObject<List<Pacientes>>(J);
         }
+        private void Guardar()
+        {
+            string json = JsonConvert.SerializeObject(PacienteList);
+            string archivo = Server.MapPath("pacientes.json");
+            System.IO.File.WriteAllText(archivo, json);
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-           
+            Pacientes paciente = Pacientes.PacientesLista.Find(x => x.NIT == NIT);
+            paciente.Nombre = NombreNuevo.Text;
+            paciente.Apellido= ApellidoNuevo.Text;
+            paciente.Direccion = Direccion.Text;
+            paciente.FechaNacimiento = FNacimiento.SelectedDate;
+            paciente.Telefono = Telefono.Text;
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Pacientes paciente = Pacientes.PacientesLista.Find(x => x.NIT == NIT);
+            paciente.NIT = NITPaciente.Text;
+            paciente.Nombre = NombreNuevo.Text;
+            paciente.Apellido = ApellidoNuevo.Text;
+            paciente.Direccion = Direccion.Text;
+            paciente.FechaNacimiento = FNacimiento.SelectedDate;
+            paciente.Telefono = Telefono.Text;
+            Guardar();
         }
     }
 }
