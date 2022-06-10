@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Newtonsoft.Json;
@@ -15,7 +16,7 @@ namespace Proyecto_Final
         List<Hospital> PacienteINFO = new List<Hospital>();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
         private void Limpiar()
         {

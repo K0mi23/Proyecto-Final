@@ -20,6 +20,7 @@ namespace Proyecto_Final
             string J = json.ReadToEnd();
             json.Close();
             PacienteList = JsonConvert.DeserializeObject<List<Pacientes>>(J);
+            GridView1.DataSource = PacienteList; GridView1.DataBind();
         }
         private void Guardar()
         {
@@ -30,7 +31,8 @@ namespace Proyecto_Final
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Pacientes paciente = Pacientes.PacientesLista.Find(x => x.NIT == NIT);
+            Pacientes paciente = Pacientes.PacientesLista.Find(x => x.NIT == NITPaciente.Text);
+            paciente.NIT = NITPaciente.Text;
             paciente.Nombre = NombreNuevo.Text;
             paciente.Apellido= ApellidoNuevo.Text;
             paciente.Direccion = Direccion.Text;
@@ -41,7 +43,7 @@ namespace Proyecto_Final
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Pacientes paciente = Pacientes.PacientesLista.Find(x => x.NIT == NIT);
+            Pacientes paciente = Pacientes.PacientesLista.Find(x => x.NIT == NITPaciente.Text);
             paciente.NIT = NITPaciente.Text;
             paciente.Nombre = NombreNuevo.Text;
             paciente.Apellido = ApellidoNuevo.Text;

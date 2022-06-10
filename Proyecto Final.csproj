@@ -129,6 +129,8 @@
     <Content Include="ClassDiagram1.cd" />
     <Content Include="Login.aspx" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="libman.json" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

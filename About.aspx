@@ -3,7 +3,6 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class ="jumbotron">
 
-        <h2><%: Title %></h2>
     <h3>Agendar Citas</h3>
     <p>Nit Paciente:
         <asp:TextBox ID="NitPaciente" runat="server"></asp:TextBox>
