@@ -10,5 +10,7 @@ namespace Proyecto_Final
         public string CodigoSintoma { get; set; }
         public string DescripcionSintoma { get; set; }
 
+        public static List<Sintomas> Lista_Sintomas = new List<Sintomas>();
+
     }
 }

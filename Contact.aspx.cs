@@ -14,7 +14,7 @@ namespace Proyecto_Final
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            string archivo = Server.MapPath("pacientes.json");
+            string archivo = Server.MapPath("medicamentos.json");
             StreamReader json = File.OpenText(archivo);
             string J = json.ReadToEnd();
             json.Close();
@@ -26,7 +26,6 @@ namespace Proyecto_Final
             string archivo = Server.MapPath("medicamentos.json");
             System.IO.File.WriteAllText(archivo, json);
         }
-
 
         protected void Button2_Click(object sender, EventArgs e)
         {

@@ -30,6 +30,17 @@
             <SortedDescendingHeaderStyle BackColor="#275353" />
         </asp:GridView>
 </p>
-    <p>&nbsp;</p>
+        <h2><%: Title %>Agregar Sintoma</h2>
+    <p>Código del Sintoma:
+        <asp:TextBox ID="Codigo_Sintoma0" runat="server"></asp:TextBox>
+&nbsp;
+        <asp:Button ID="Button1" runat="server" Height="46px" OnClick="Button1_Click" Text="Buscar" Width="131px" />
+</p>
+<p>Descripción del Sintoma:
+    <asp:TextBox ID="Descripcion0" runat="server" Width="245px"></asp:TextBox>
+</p>
+    <p>
+        <asp:Button ID="Actualizar" runat="server" Height="44px" OnClick="Actualizar_Click" Text="Actualizar" Width="118px" />
+        </p>
    </div>
         </asp:Content>

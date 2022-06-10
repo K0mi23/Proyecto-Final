@@ -1,9 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AztualizarPaciente.aspx.cs" Inherits="Proyecto_Final.AztualizarPaciente" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class ="jumbotron">
-        <p>
-        <br />
-    </p>
     <h3>Actualizar Paciente</h3>
     <p>Nit:&nbsp;
         <asp:TextBox ID="NITPaciente" runat="server"></asp:TextBox>
