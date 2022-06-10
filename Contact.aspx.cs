@@ -19,6 +19,7 @@ namespace Proyecto_Final
             string J = json.ReadToEnd();
             json.Close();
             Medicamentos.MeicamentosLista = JsonConvert.DeserializeObject<List<Medicamentos>>(J);
+            GridView1.DataSource = Medicamentos.MeicamentosLista; GridView1.DataBind();
         }
         private void Guardar()
         {
