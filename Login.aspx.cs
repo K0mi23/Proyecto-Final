@@ -38,7 +38,7 @@ namespace Proyecto_Final
                 string strRedirect;
                 strRedirect = Request["ReturnUrl"];
                 if (strRedirect == null)
-                    strRedirect = "Default.aspx";
+                    strRedirect = "About.aspx";
                 Response.Redirect(strRedirect, true);
             }
         }
