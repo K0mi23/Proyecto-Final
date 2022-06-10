@@ -16,7 +16,7 @@ namespace Proyecto_Final
         List<Hospital> PacienteINFO = new List<Hospital>();
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            
         }
         private void Limpiar()
         {
