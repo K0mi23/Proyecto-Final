@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -30,7 +31,7 @@ namespace Proyecto_Final
         {
             string json = JsonConvert.SerializeObject(pacientesLista);
             string archivo = Server.MapPath("pacientes.json");
-            System.IO.File.WriteAllText(archivo, json);
+            File.WriteAllText(archivo, json);
         } 
         protected void BotonGuardar_Click(object sender, EventArgs e)
         {

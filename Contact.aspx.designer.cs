@@ -42,22 +42,22 @@ namespace Proyecto_Final
         protected global::System.Web.UI.WebControls.TextBox Laboratorio;
 
         /// <summary>
-        /// Enfermedades control.
+        /// Enferemdades control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Enfermedades;
+        protected global::System.Web.UI.WebControls.TextBox Enferemdades;
 
         /// <summary>
-        /// Button1 control.
+        /// IngresarBoton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button IngresarBoton;
 
         /// <summary>
         /// GridView1 control.
@@ -112,5 +112,14 @@ namespace Proyecto_Final
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView2;
+
+        /// <summary>
+        /// Acutalizar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Acutalizar;
     }
 }

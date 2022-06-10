@@ -14,10 +14,10 @@
     <asp:TextBox ID="Laboratorio" runat="server"></asp:TextBox>
 </p>
 <p>Enfermedades a recetar:&nbsp;
-    <asp:TextBox ID="Enfermedades" runat="server"></asp:TextBox>
+    <asp:TextBox ID="Enferemdades" runat="server"></asp:TextBox>
 </p>
 <p>
-    <asp:Button ID="Button1" runat="server" Height="47px" OnClick="Button1_Click" Text="Ingresar" Width="149px" />
+    <asp:Button ID="IngresarBoton" runat="server" Height="52px" OnClick="IngresarBoton_Click" Text="Ingresar" Width="133px" />
 </p>
 <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Height="158px" Width="433px">
     <FooterStyle BackColor="White" ForeColor="#333333" />
@@ -54,5 +54,6 @@
     <SortedDescendingHeaderStyle BackColor="#275353" />
 </asp:GridView>
         <br />
+        <asp:Button ID="Acutalizar" runat="server" Height="69px" OnClick="Acutalizar_Click" Text="Actualizar" Width="137px" />
    </div>
 </asp:Content>
